@@ -7,7 +7,7 @@ android {
     buildToolsVersion build_tools_version
 
     defaultConfig {
-        applicationId "com.aborovskoy.google.codelabs.geofences"
+        applicationId "com.aborovskoy.exoplayer"
         minSdkVersion min_sdk_version
         targetSdkVersion compile_sdk_version
         versionCode 1
@@ -23,19 +23,12 @@ android {
         }
     }
 
-    dataBinding {
-        enabled true
-    }
 }
 
 dependencies {
     implementation libraries
 
-    // Lifecycle
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0'
-
-    // Location
-    implementation 'com.google.android.gms:play-services-maps:17.0.0'
-    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.7.3'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.7.3'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.7.3'
 }
